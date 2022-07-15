@@ -972,7 +972,8 @@
       "WMS.Moudle.DataAccess/1.0.0": {
         "dependencies": {
           "SqlSugarCore": "5.0.9.1",
-          "WMS.Moudle.Entity": "1.0.0"
+          "WMS.Moudle.Entity": "1.0.0",
+          "WMS.Moudle.Utility": "1.0.0"
         },
         "runtime": {
           "WMS.Moudle.DataAccess.dll": {}

@@ -64,6 +64,99 @@
             EVT Facultative
             </summary>
         </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Base.LocationInitDto">
+            <summary>
+            货位初始化dto
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationInitDto.roadway_no">
+            <summary>
+            巷道号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationInitDto.rows">
+            <summary>
+            列属性
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Base.LocationRowDto">
+            <summary>
+            货位初始化dto
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationRowDto.RowIndex">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationRowDto.ColumnCount">
+            <summary>
+            列数35
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationRowDto.FloorCount">
+            <summary>
+            层数18
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationRowDto.BigFloor">
+            <summary>
+            大货架层
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Base.LocationShowDto">
+            <summary>
+            货位展示
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationShowDto.RowNo">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationShowDto.Name">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationShowDto.DataList">
+            <summary>
+            集合
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Base.LocationDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationDto.roadway_no">
+            <summary>
+            Desc:巷到编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationDto.location_code">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationDto.location_name">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Base.LocationDto.location_type">
+            <summary>
+            Desc:货位类型0-默认，1-
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
         <member name="T:WMS.Moudle.Entity.Dto.Base.MaterialPageDto">
             <summary>
             分页入参
@@ -78,6 +171,116 @@
             <summary>
             编码类型
             </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Stock.StockDto">
+            <summary>
+            库存入参实体
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockDto.roadway_no">
+            <summary>
+            Desc:巷到编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockDto.location_code">
+            <summary>
+            Desc:货位编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockDto.pallet_barcode">
+            <summary>
+            Desc:托盘条码
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockDto.task_id">
+            <summary>
+            Desc:任务id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockDto.task_type">
+            <summary>
+            Desc:任务类型
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockDto.is_in_stock">
+            <summary>
+            Desc:是否入库(1-入库，2-出库)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockDto.material_type">
+            <summary>
+            Desc:物件类型(1-模具托盘，2-模套托盘，3-模具)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockDto.is_part">
+            <summary>
+            Desc:是否部分出入库(1-是，0-否)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Stock.StockPageDto">
+            <summary>
+            库存分页入参
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockPageDto.RoadWayNo">
+            <summary>
+            巷道号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockPageDto.LocationCode">
+            <summary>
+            货位号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockPageDto.Code">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockPageDto.Type">
+            <summary>
+            类型编号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockPageDto.IsSpecialOut">
+            <summary>
+            是否指定出库(true-是，else-否)
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Stock.StockShowDto">
+            <summary>
+            分页展示实体
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockShowDto.piece_code">
+            <summary>
+            Desc:模具类型编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Stock.StockShowDto.fabrication_no">
+            <summary>
+            Desc:模具编号
+            Default:
+            Nullable:False
+            </summary>           
         </member>
         <member name="T:WMS.Moudle.Entity.Dto.System.AuthDto">
             <summary>
@@ -395,6 +598,551 @@
             入库特殊权限
             </summary>
         </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Task.MoudleCountDto">
+            <summary>
+            获取模具数量
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.MoudleCountDto.task_type">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.MoudleCountDto.material_type">
+            <summary>
+            物件类型
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Task.PalletInDto">
+            <summary>
+            空托盘入库
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.PalletInDto.material_type">
+            <summary>
+            托盘类型(4/5)
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Task.PalletOutDto">
+            <summary>
+            空托盘出库
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.PalletOutDto.number">
+            <summary>
+            出库数量
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Task.TaskDetailDto">
+            <summary>
+            任务明细
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.TaskDetailDto.piece_code">
+            <summary>
+            Desc:模具类型编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.TaskDetailDto.fabrication_no">
+            <summary>
+            Desc:模具编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.TaskDetailDto.etat_code">
+            <summary>
+            Desc:状态
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.TaskDetailDto.due_date">
+            <summary>
+            Desc:有效期
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.TaskDetailDto.number">
+            <summary>
+            Desc:数量
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Task.MoudleInDto">
+            <summary>
+            模具入库入参
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.MoudleInDto.pallet_barcode">
+            <summary>
+            托盘条码
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.MoudleInDto.codes">
+            <summary>
+            部件钢印集合
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Wcs.TunnelDto">
+            <summary>
+            获取巷道入参
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Wcs.TunnelDto.WMSTaskNum">
+            <summary>
+            wms任务号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Wcs.TunnelDto.SrmCurTunnelList">
+            <summary>
+            巷到列表
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Wcs.TunnelDto.Memo1">
+            <summary>
+            Memo1
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Wcs.TunnelDto.Memo2">
+            <summary>
+            Memo2
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Wcs.WareCellDto">
+            <summary>
+            获取货位
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Wcs.WareCellDto.WMSTaskNum">
+            <summary>
+            wms任务号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Wcs.WareCellDto.TunnelNum">
+            <summary>
+            巷道号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Wcs.WareCellDto.PickUpEquipmentNo">
+            <summary>
+            设备号
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Wcs.WareCellDto.Memo1">
+            <summary>
+            Memo1
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Wcs.WareCellDto.Memo2">
+            <summary>
+            Memo2
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.CommonEnum">
+            <summary>
+            枚举
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.CommonEnum.EState">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EState.Use">
+            <summary>
+            启用
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EState.Stop">
+            <summary>
+            停用
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.CommonEnum.EDicCode">
+            <summary>
+            字典类型
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EDicCode.sys_state">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EDicCode.material_type">
+            <summary>
+            物件类型
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EDicCode.task_type">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EDicCode.is_in_stock">
+            <summary>
+            出入库类型
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.CommonEnum.EConfigCode">
+            <summary>
+            配置编码
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EConfigCode.moudle_part">
+            <summary>
+            模具-部件入库扫码行数
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EConfigCode.moudle_whole">
+            <summary>
+            模具-整模入库扫码行数
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EConfigCode.moudle_spare">
+            <summary>
+            模具-备件入库扫码行数
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EConfigCode.is_scan_pallet">
+            <summary>
+            是否扫描托盘
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.CommonEnum.EPowerState">
+            <summary>
+            特殊权限标识
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EPowerState.Yes">
+            <summary>
+            入库不检测
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.EPowerState.No">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.CommonEnum.ELocationType">
+            <summary>
+            货架类型
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.ELocationType.Common">
+            <summary>
+            常规
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.ELocationType.Big">
+            <summary>
+            大货架
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.CommonEnum.ELocationState">
+            <summary>
+            货架类型
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.ELocationState.Empty">
+            <summary>
+            空货位
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.ELocationState.Use">
+            <summary>
+            有货
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.ELocationState.Stop">
+            <summary>
+            禁用
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.ELocationState.InStock">
+            <summary>
+            入库中
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.ELocationState.OutStock">
+            <summary>
+            出库中
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.ELocationState.OutStockStop">
+            <summary>
+            禁止出库
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.CommonEnum.ERoadWay">
+            <summary>
+            巷道
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.ERoadWay.One">
+            <summary>
+            巷道1
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.CommonEnum.ERoadWay.Two">
+            <summary>
+            巷道2
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.TaskEnum">
+            <summary>
+            任务枚举类
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.TaskEnum.ETaskType">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskType.MoudleIn">
+            <summary>
+            模具入库
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskType.MoudleSetIn">
+            <summary>
+            模套入库
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskType.OtherIn">
+            <summary>
+            其它入库
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskType.PalletEmptyIn">
+            <summary>
+            空托盘入库
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskType.MoudleOut">
+            <summary>
+            模具出库
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskType.MoudleSetOut">
+            <summary>
+            模套出库
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskType.OtherOut">
+            <summary>
+            其它出库
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskType.PalletEmptyOut">
+            <summary>
+            空托盘出库
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskType.SpecialOut">
+            <summary>
+            指定出库
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.TaskEnum.EMaterialType">
+            <summary>
+            物料类型
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.EMaterialType.Part">
+            <summary>
+            部件
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.EMaterialType.Whole">
+            <summary>
+            整模
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.EMaterialType.Spare">
+            <summary>
+            备件
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.EMaterialType.PalletMoudle">
+            <summary>
+            模具托盘
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.EMaterialType.PalletSet">
+            <summary>
+            模套托盘
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.TaskEnum.EIsInStock">
+            <summary>
+            出入库类型
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.EIsInStock.Yes">
+            <summary>
+            入库
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.EIsInStock.No">
+            <summary>
+            出库
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Enum.TaskEnum.ETaskState">
+            <summary>
+            任务状态
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskState.Wait">
+            <summary>
+            排队中
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskState.Excuting">
+            <summary>
+            执行中
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskState.Conveyor">
+            <summary>
+            输送线执行中
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskState.Hoist">
+            <summary>
+            提升机执行中 99.完成;106.取消;109.手动完成
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskState.Finish">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskState.Cancel">
+            <summary>
+            取消
+            </summary>
+        </member>
+        <member name="F:WMS.Moudle.Entity.Enum.TaskEnum.ETaskState.HandFinish">
+            <summary>
+            手动完成
+            </summary>
+        </member>
+        <member name="T:WMS.Moudle.Entity.Models.base_location">
+            <summary>
+            货位表
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.id">
+            <summary>
+            Desc:主键
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.roadway_no">
+            <summary>
+            Desc:巷到编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.row_no">
+            <summary>
+            Desc:行编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.column_no">
+            <summary>
+            Desc:列编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.floor_no">
+            <summary>
+            Desc:层编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.location_code">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.location_name">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.location_type">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.sort_no">
+            <summary>
+            Desc:优先级排序
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.state">
+            <summary>
+            Desc:状态(1-启用，0-停用)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.create_time">
+            <summary>
+            Desc:创建时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.create_id">
+            <summary>
+            Desc:创建人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.update_time">
+            <summary>
+            Desc:修改时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.update_id">
+            <summary>
+            Desc:修改人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.base_location.remark">
+            <summary>
+            Desc:备注
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
         <member name="T:WMS.Moudle.Entity.Models.base_material">
             <summary>
             物料表
@@ -648,6 +1396,212 @@
         <member name="P:WMS.Moudle.Entity.Models.base_material.state">
             <summary>
             Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="T:WMS.Moudle.Entity.Models.stock">
+            <summary>
+            库存主表
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.id">
+            <summary>
+            Desc:主键
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.roadway_no">
+            <summary>
+            Desc:巷到编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.location_code">
+            <summary>
+            Desc:货位编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.location_state">
+            <summary>
+            Desc:货位状态
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.pallet_barcode">
+            <summary>
+            Desc:托盘条码
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.task_id">
+            <summary>
+            Desc:任务id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.task_type">
+            <summary>
+            Desc:任务类型
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.is_in_stock">
+            <summary>
+            Desc:是否入库(1-入库，2-出库)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.material_type">
+            <summary>
+            Desc:物件类型(1-模具托盘，2-模套托盘，3-模具)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.is_part">
+            <summary>
+            Desc:是否部分出入库(1-是，0-否)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.state">
+            <summary>
+            Desc:状态(1-启用，0-默认)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.create_time">
+            <summary>
+            Desc:创建时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.create_id">
+            <summary>
+            Desc:创建人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.update_time">
+            <summary>
+            Desc:修改时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.update_id">
+            <summary>
+            Desc:修改人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock.remark">
+            <summary>
+            Desc:备注
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="T:WMS.Moudle.Entity.Models.stock_detail">
+            <summary>
+            库存明细表
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.id">
+            <summary>
+            Desc:明细id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.stock_id">
+            <summary>
+            Desc:主表id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.piece_code">
+            <summary>
+            Desc:模具类型编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.fabrication_no">
+            <summary>
+            Desc:模具编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.etat_code">
+            <summary>
+            Desc:状态
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.due_date">
+            <summary>
+            Desc:有效期
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.number">
+            <summary>
+            Desc:数量
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.create_id">
+            <summary>
+            Desc:创建人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.create_time">
+            <summary>
+            Desc:创建时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.update_id">
+            <summary>
+            Desc:修改人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.update_time">
+            <summary>
+            Desc:修改时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.stock_detail.state">
+            <summary>
+            Desc:状态(1-启用，0-停用)
             Default:
             Nullable:False
             </summary>           
@@ -1243,6 +2197,240 @@
             Desc:备注说明
             Default:
             Nullable:True
+            </summary>           
+        </member>
+        <member name="T:WMS.Moudle.Entity.Models.task">
+            <summary>
+            任务表
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.id">
+            <summary>
+            Desc:主键
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.task_no">
+            <summary>
+            Desc:任务号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.is_in_stock">
+            <summary>
+            Desc:是否入库(1-入库，2-出库)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.task_type">
+            <summary>
+            Desc:任务类型
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.task_state">
+            <summary>
+            Desc:任务状态
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.material_type">
+            <summary>
+            Desc:物件类型(模具托盘、整模、备件等)
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.pallet_barcode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.number">
+            <summary>
+            Desc:数量
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.wcs_task_id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.roadway_no">
+            <summary>
+            Desc:巷到编号
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.start_point">
+            <summary>
+            Desc:起始地址
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.now_point">
+            <summary>
+            Desc:当前地址
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.end_point">
+            <summary>
+            Desc:目标地址
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.sort_no">
+            <summary>
+            Desc:排序号(优先执行数值大的)
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.state">
+            <summary>
+            Desc:状态(1-启用，0-停用)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.create_time">
+            <summary>
+            Desc:创建时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.create_id">
+            <summary>
+            Desc:创建人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.update_time">
+            <summary>
+            Desc:修改时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.update_id">
+            <summary>
+            Desc:修改人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task.remark">
+            <summary>
+            Desc:备注
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="T:WMS.Moudle.Entity.Models.task_detail">
+            <summary>
+            任务明细表
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.task_id">
+            <summary>
+            Desc:任务id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.piece_code">
+            <summary>
+            Desc:模具类型编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.fabrication_no">
+            <summary>
+            Desc:模具编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.etat_code">
+            <summary>
+            Desc:状态
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.due_date">
+            <summary>
+            Desc:有效期
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.number">
+            <summary>
+            Desc:数量
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.create_id">
+            <summary>
+            Desc:创建人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.create_time">
+            <summary>
+            Desc:创建时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.update_id">
+            <summary>
+            Desc:修改人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.update_time">
+            <summary>
+            Desc:修改时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail.state">
+            <summary>
+            Desc:状态(1-启用，0-停用)
+            Default:
+            Nullable:False
             </summary>           
         </member>
         <member name="T:WMS.Moudle.Entity.PageData`1">
