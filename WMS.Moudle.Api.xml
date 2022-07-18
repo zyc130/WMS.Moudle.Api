@@ -9,7 +9,7 @@
             权限
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.AuthController.#ctor(WMS.Moudle.Business.Interface.System.IRoleBusiness,WMS.Moudle.Business.Interface.System.IRoleMenuBusiness,Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper)">
+        <member name="M:WMS.Moudle.Api.Controllers.AuthController.#ctor(WMS.Moudle.Business.Interface.System.IRoleBusiness,WMS.Moudle.Business.Interface.System.IRoleMenuBusiness,Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
             构造
             </summary>
@@ -58,18 +58,19 @@
             用户
             </summary>
         </member>
-        <member name="F:WMS.Moudle.Api.Controllers.BaseController.result">
+        <member name="F:WMS.Moudle.Api.Controllers.BaseController.dictionaryDetailBusiness">
             <summary>
-            返回对象
+            字典
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.BaseController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper)">
+        <member name="M:WMS.Moudle.Api.Controllers.BaseController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
-            构造
+            构造2
             </summary>
-            <param name="_httpContextAccessor"></param>
-            <param name="_userBusiness"></param>
-            <param name="_mapper"></param>
+            <param name="httpContextAccessor"></param>
+            <param name="userBusiness"></param>
+            <param name="mapper"></param>
+            <param name="dictionaryDetailBusiness"></param>
         </member>
         <member name="M:WMS.Moudle.Api.Controllers.BaseController.WriteExcel(System.Byte[],System.String)">
             <summary>
@@ -84,7 +85,7 @@
             系统配置
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.ConfigController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.System.IConfigBusiness)">
+        <member name="M:WMS.Moudle.Api.Controllers.ConfigController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.System.IConfigBusiness,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
             构造
             </summary>
@@ -132,7 +133,7 @@
             部门
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.DeptController.#ctor(WMS.Moudle.Business.Interface.System.IDeptBusiness,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness)">
+        <member name="M:WMS.Moudle.Api.Controllers.DeptController.#ctor(WMS.Moudle.Business.Interface.System.IDeptBusiness,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness,WMS.Moudle.Business.Interface.System.IUserBusiness)">
             <summary>
             构造
             </summary>
@@ -187,7 +188,7 @@
             字典分类
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.DictionaryController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.System.IDictionaryBusiness)">
+        <member name="M:WMS.Moudle.Api.Controllers.DictionaryController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.System.IDictionaryBusiness,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
             字典类型
             </summary>
@@ -308,7 +309,7 @@
             货位
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.LocationController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.Base.ILocationBusiness)">
+        <member name="M:WMS.Moudle.Api.Controllers.LocationController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.Base.ILocationBusiness,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
             构造
             </summary>
@@ -341,7 +342,7 @@
             物料(摸具)
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.MaterialController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Utility.Interface.IExcelHelper,WMS.Moudle.Business.Interface.Base.IMaterialBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.System.IUserBusiness)">
+        <member name="M:WMS.Moudle.Api.Controllers.MaterialController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Utility.Interface.IExcelHelper,WMS.Moudle.Business.Interface.Base.IMaterialBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.System.IUserBusiness,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
             构造
             </summary>
@@ -377,7 +378,7 @@
             菜单
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.MenuController.#ctor(WMS.Moudle.Business.Interface.System.IMenuBusiness,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness)">
+        <member name="M:WMS.Moudle.Api.Controllers.MenuController.#ctor(WMS.Moudle.Business.Interface.System.IMenuBusiness,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
             构造
             </summary>
@@ -418,7 +419,7 @@
             角色
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.RoleController.#ctor(WMS.Moudle.Business.Interface.System.IRoleBusiness,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness)">
+        <member name="M:WMS.Moudle.Api.Controllers.RoleController.#ctor(WMS.Moudle.Business.Interface.System.IRoleBusiness,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
             构造
             </summary>
@@ -473,13 +474,15 @@
             库存信息
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.StockController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.Stock.IStockBusiness)">
+        <member name="M:WMS.Moudle.Api.Controllers.StockController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.Stock.IStockBusiness,WMS.Moudle.Business.Interface.Stock.IStockDetailBusiness,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
             构造
             </summary>
             <param name="_httpContextAccessor"></param>
             <param name="_userBusiness"></param>
             <param name="_mapper"></param>
+            <param name="_stockBusiness"></param>
+            <param name="_stockDetailBusiness"></param>
         </member>
         <member name="M:WMS.Moudle.Api.Controllers.StockController.QueryPage(WMS.Moudle.Entity.Dto.Stock.StockPageDto)">
             <summary>
@@ -488,12 +491,19 @@
             <param name="t"></param>
             <returns></returns>
         </member>
+        <member name="M:WMS.Moudle.Api.Controllers.StockController.QueryByDetail(System.Int64)">
+            <summary>
+            库存详情
+            </summary>
+            <param name="stockId">库存id</param>
+            <returns></returns>
+        </member>
         <member name="T:WMS.Moudle.Api.Controllers.TaskController">
             <summary>
             任务
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.TaskController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.Task.ITaskBusiness)">
+        <member name="M:WMS.Moudle.Api.Controllers.TaskController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness,WMS.Moudle.Business.Interface.Task.ITaskBusiness,WMS.Moudle.Business.Interface.Task.ITaskDetailBusiness)">
             <summary>
             构造
             </summary>
@@ -501,6 +511,7 @@
             <param name="_userBusiness"></param>
             <param name="_mapper"></param>
             <param name="_taskBusiness"></param>
+            <param name="_taskDetailBusiness"></param>
         </member>
         <member name="M:WMS.Moudle.Api.Controllers.TaskController.CreatePalletIn(WMS.Moudle.Entity.Dto.Task.PalletInDto)">
             <summary>
@@ -529,6 +540,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:WMS.Moudle.Api.Controllers.TaskController.CreateMoudleOut(WMS.Moudle.Entity.Dto.Task.MoudleOutDto)">
+            <summary>
+            生成出库任务
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
         <member name="M:WMS.Moudle.Api.Controllers.TaskController.Cancel(System.Int64)">
             <summary>
             取消
@@ -541,12 +559,32 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:WMS.Moudle.Api.Controllers.TaskController.QueryPage(WMS.Moudle.Entity.Dto.Task.TaskPageDto)">
+            <summary>
+            任务列表
+            </summary>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Moudle.Api.Controllers.TaskController.QueryByDetail(System.Int64)">
+            <summary>
+            任务详情
+            </summary>
+            <param name="taskId">任务id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Moudle.Api.Controllers.TaskController.QueryPartIn">
+            <summary>
+            部分回库
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:WMS.Moudle.Api.Controllers.UserController">
             <summary>
             用户
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.UserController.#ctor(WMS.Moudle.Business.Interface.System.IUserBusiness,WMS.Moudle.Utility.Interface.IJwtHelper,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+        <member name="M:WMS.Moudle.Api.Controllers.UserController.#ctor(WMS.Moudle.Business.Interface.System.IUserBusiness,WMS.Moudle.Utility.Interface.IJwtHelper,AutoMapper.IMapper,Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
             构造
             </summary>
@@ -608,7 +646,7 @@
             wcs交互接口
             </summary>
         </member>
-        <member name="M:WMS.Moudle.Api.Controllers.WCSController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.Task.ITaskBusiness)">
+        <member name="M:WMS.Moudle.Api.Controllers.WCSController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.Task.ITaskBusiness,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
             <summary>
             构造
             </summary>
@@ -627,6 +665,35 @@
             <summary>
             获取货位
             </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Moudle.Api.AttributeHelper">
+            <summary>
+            特性扩展类型
+            </summary>
+        </member>
+        <member name="M:WMS.Moudle.Api.AttributeHelper.GetDictionaryTagAttribute``1(``0)">
+            <summary>
+            获取标记属性SummaryAttribute对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Moudle.Api.AttributeHelper.ToDictionaryName``1(``0,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
+            <summary>
+            获取字典标注名称
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Moudle.Api.AttributeHelper.ToDictionaryName``1(System.Collections.Generic.List{``0},WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
+            <summary>
+            获取字典标注名称
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
             <returns></returns>
         </member>
         <member name="T:WMS.Moudle.Api.Custom.Attribution.ApiActionFilterAttribute">
@@ -678,6 +745,27 @@
             </summary>
             <param name="schema"></param>
             <param name="context"></param>
+        </member>
+        <member name="T:WMS.Moudle.Api.UserNameExtent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WMS.Moudle.Api.UserNameExtent.SetName``1(``0,System.Collections.Generic.List{WMS.Moudle.Entity.Models.sys_user})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <param name="users"></param>
+        </member>
+        <member name="M:WMS.Moudle.Api.UserNameExtent.SetName``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{WMS.Moudle.Entity.Models.sys_user})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ts"></param>
+            <param name="users"></param>
         </member>
     </members>
 </doc>
