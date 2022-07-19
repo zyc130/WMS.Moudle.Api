@@ -743,6 +743,26 @@
             Nullable:True
             </summary>           
         </member>
+        <member name="T:WMS.Moudle.Entity.Dto.Task.TaskHisPageDto">
+            <summary>
+            历史任务分页入参
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.TaskHisPageDto.create_name">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.TaskHisPageDto.start_time">
+            <summary>
+            创建时间开始
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Dto.Task.TaskHisPageDto.end_time">
+            <summary>
+            创建时间截至
+            </summary>
+        </member>
         <member name="T:WMS.Moudle.Entity.Dto.Task.TaskPageDto">
             <summary>
             任务分页入参
@@ -2269,6 +2289,190 @@
             Nullable:True
             </summary>           
         </member>
+        <member name="T:WMS.Moudle.Entity.Models.task_his">
+            <summary>
+            任务历史表
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.is_in_stock_name">
+            <summary>
+            Desc:是否入库
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.task_type_name">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.task_state_name">
+            <summary>
+            任务状态
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.material_type_name">
+            <summary>
+            Desc:物件类型
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.state_name">
+            <summary>
+            状态name
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.id">
+            <summary>
+            Desc:主键
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.task_no">
+            <summary>
+            Desc:任务号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.is_in_stock">
+            <summary>
+            Desc:是否入库(1-入库，2-出库)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.task_type">
+            <summary>
+            Desc:任务类型
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.is_part">
+            <summary>
+            Desc:是否部分出入库
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.task_state">
+            <summary>
+            Desc:任务状态
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.material_type">
+            <summary>
+            Desc:物件类型(模具托盘、整模、备件等)
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.pallet_barcode">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.number">
+            <summary>
+            Desc:数量
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.wcs_task_id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.roadway_no">
+            <summary>
+            Desc:巷到编号
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.start_point">
+            <summary>
+            Desc:起始地址
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.now_point">
+            <summary>
+            Desc:当前地址
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.end_point">
+            <summary>
+            Desc:目标地址
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.sort_no">
+            <summary>
+            Desc:排序号(优先执行数值大的)
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.state">
+            <summary>
+            Desc:状态(1-启用，0-停用)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.create_time">
+            <summary>
+            Desc:创建时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.create_id">
+            <summary>
+            Desc:创建人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.update_time">
+            <summary>
+            Desc:修改时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.update_id">
+            <summary>
+            Desc:修改人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.remark">
+            <summary>
+            Desc:备注
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_his.move_time">
+            <summary>
+            Desc:迁移时间
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
         <member name="T:WMS.Moudle.Entity.Models.base_location">
             <summary>
             货位表
@@ -2677,6 +2881,102 @@
             Desc:状态(1-启用，0-停用)
             Default:
             Nullable:False
+            </summary>           
+        </member>
+        <member name="T:WMS.Moudle.Entity.Models.task_detail_his">
+            <summary>
+            任务明细历史表
+            </summary>
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.id">
+            <summary>
+            Desc:
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.task_id">
+            <summary>
+            Desc:任务id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.piece_code">
+            <summary>
+            Desc:模具类型编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.fabrication_no">
+            <summary>
+            Desc:模具编号
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.etat_code">
+            <summary>
+            Desc:状态
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.due_date">
+            <summary>
+            Desc:有效期
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.number">
+            <summary>
+            Desc:数量
+            Default:
+            Nullable:True
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.create_id">
+            <summary>
+            Desc:创建人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.create_time">
+            <summary>
+            Desc:创建时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.update_id">
+            <summary>
+            Desc:修改人id
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.update_time">
+            <summary>
+            Desc:修改时间
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.state">
+            <summary>
+            Desc:状态(1-启用，0-停用)
+            Default:
+            Nullable:False
+            </summary>           
+        </member>
+        <member name="P:WMS.Moudle.Entity.Models.task_detail_his.remove_time">
+            <summary>
+            Desc:迁移时间
+            Default:
+            Nullable:True
             </summary>           
         </member>
         <member name="T:WMS.Moudle.Entity.PageData`1">

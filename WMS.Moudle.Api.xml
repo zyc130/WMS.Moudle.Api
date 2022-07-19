@@ -510,6 +510,7 @@
             <param name="_httpContextAccessor"></param>
             <param name="_userBusiness"></param>
             <param name="_mapper"></param>
+            <param name="dictionaryDetailBusiness"></param>
             <param name="_taskBusiness"></param>
             <param name="_taskDetailBusiness"></param>
         </member>
@@ -577,6 +578,50 @@
             <summary>
             部分回库
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Moudle.Api.Controllers.TaskController.SetTop(System.Int64)">
+            <summary>
+            置顶(task_state=0可操作)
+            </summary>
+            <param name="id">任务id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Moudle.Api.Controllers.TaskController.SetTopCancel(System.Int64)">
+            <summary>
+            置顶取消(task_state=0可操作)
+            </summary>
+            <param name="id">任务id</param>
+            <returns></returns>
+        </member>
+        <member name="T:WMS.Moudle.Api.Controllers.TaskHisController">
+            <summary>
+            历史任务
+            </summary>
+        </member>
+        <member name="M:WMS.Moudle.Api.Controllers.TaskHisController.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,WMS.Moudle.Business.Interface.System.IUserBusiness,AutoMapper.IMapper,WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness,WMS.Moudle.Business.Interface.Task.ITaskHisBusiness,WMS.Moudle.Business.Interface.Task.ITaskDetailHisBusiness)">
+            <summary>
+            构造
+            </summary>
+            <param name="httpContextAccessor"></param>
+            <param name="userBusiness"></param>
+            <param name="mapper"></param>
+            <param name="dictionaryDetailBusiness"></param>
+            <param name="taskHisBusiness"></param>
+            <param name="detailHisBusiness"></param>
+        </member>
+        <member name="M:WMS.Moudle.Api.Controllers.TaskHisController.QueryPage(WMS.Moudle.Entity.Dto.Task.TaskHisPageDto)">
+            <summary>
+            任务列表
+            </summary>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WMS.Moudle.Api.Controllers.TaskHisController.QueryByDetail(System.Int64)">
+            <summary>
+            任务详情
+            </summary>
+            <param name="taskId">任务id</param>
             <returns></returns>
         </member>
         <member name="T:WMS.Moudle.Api.Controllers.UserController">
@@ -686,6 +731,7 @@
             </summary>
             <typeparam name="T"></typeparam>
             <param name="t"></param>
+            <param name="dictionaryDetailBusiness"></param>
             <returns></returns>
         </member>
         <member name="M:WMS.Moudle.Api.AttributeHelper.ToDictionaryName``1(System.Collections.Generic.List{``0},WMS.Moudle.Business.Interface.System.IDictionaryDetailBusiness)">
@@ -693,7 +739,8 @@
             获取字典标注名称
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="t"></param>
+            <param name="ts"></param>
+            <param name="dictionaryDetailBusiness"></param>
             <returns></returns>
         </member>
         <member name="T:WMS.Moudle.Api.Custom.Attribution.ApiActionFilterAttribute">
